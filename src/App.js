@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
 
+let text = 'test variable';
+
 function App() {
+
+    let text2 = '222';
+
+    const style = {
+        fontSize: '24px',
+        fontStyle : 'italic',
+        color: 'red'
+    };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+          <div>
+              <h1 style={style}>
+                  app_1
+              </h1>
+              <img src="/images/cart.svg" alt="cart"/>
+              <ul>
+                  <li>Hello</li>
+                  <li>{text+text2}</li>
+              </ul>
+          </div>
+      </>
   );
 }
 
